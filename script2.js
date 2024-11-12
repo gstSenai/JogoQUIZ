@@ -28,6 +28,12 @@ function nextQuestion(e) {
         selectedButton.classList.add("correct-answer");
     } else {
         selectedButton.classList.add("incorrect-answer");
+
+        document.querySelectorAll(".answer").forEach((button) => {
+            if (button.getAttribute("data-correct") === "true") {
+                button.classList.add("correct-answer");
+            }
+        });
     }
 
     setTimeout(() => {
