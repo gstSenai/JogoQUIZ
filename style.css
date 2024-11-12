@@ -69,10 +69,7 @@ button {
   font-weight: 500;
 }
 
-button:hover {
-  background-color: #ececec;
-  border-color: #bbb;
-}
+
 
 .finish {
   display: none;
